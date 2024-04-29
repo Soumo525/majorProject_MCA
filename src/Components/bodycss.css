@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+}
+
+.image {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text {
+        padding: 20px;
+    }
+
+    .image {
+        margin-top: 20px;
+    }
+}
